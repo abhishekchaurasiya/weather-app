@@ -6,27 +6,26 @@ const LeftWeather = () => {
     const { temp, time, date, city } = useContext(WeatherContext)
 
     return (
-        <>
-            <div
-                className='text-white absolute bottom-[15vh] left-[15vw] flex  w-full max-w-[650px] items-center gap-x-20 '>
-                <div className='flex'>
-                    <h1 className='font-bold text-[45px]'>{temp}  </h1>
-                    <p> <sup className='ml-[4px] font-bold text-[25px]'> 0</sup><span className='text-[40px]'>C</span>  </p>
-                </div>
-                <div className='flex flex-col items-center'>
-                    <p className='font-blod text-[45px]'>{city}</p>
-                    <div className='flex items-center gap-x-4'>
+        
+            <div className='relative grid lg:grid-cols-4 text-white items-center w-4/12 h-full'>
+                <div className=' absolute flex items-center gap-x-5 mt-[200px]'>
+                    <div className='flex items-center '>
+                        <h1 className='text-[40px] mr-1'>{temp}  </h1>
+                        <p> <sup className='text-[20px]'>0</sup><span className='text-[30px]'>C</span>  </p>
+                    </div>
+                    <div className=''>
+                        <p className='text-[40px] '>{city}</p>
+                    </div>
+                    <div className='mb-5 '>
+                        <IconWeather />
+                    </div>
+                    <div className='ml-5 font-semibold'>
+                        <p className='py-1'>{time}</p>
+                        <p className=''>{date.toLocaleDateString()}</p>
                     </div>
                 </div>
-                <div>
-                    <IconWeather />
-                </div>
-                <div className='flex flex-col items-center gap-y-1 justify-center'>
-                    <p className='font-blod text-[18px]'>{time}</p>
-                    <p className='font-blod text-[18px] px-4'>{date.toLocaleDateString()}</p>
-                </div>
+
             </div>
-        </>
     )
 }
 

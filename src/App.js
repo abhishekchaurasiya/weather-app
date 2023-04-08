@@ -7,12 +7,14 @@ import RightWeather from './components/RightWeather';
 const App = () => {
 
   return (
-    <div className='flex w-full h-full'>
+    <div className='relative w-full h[100vh] m-0 p-0'>
       <Background />
-     
-      <LeftWeather />
-      <RightWeather />
+      <div className='absolute top-0 w-full flex justify-evenly items-center h-full'>
+        <LeftWeather />
+        <RightWeather />
+      </div>
     </div>
+
   )
 }
 

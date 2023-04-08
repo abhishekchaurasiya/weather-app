@@ -7,9 +7,9 @@ import { MdThunderstorm } from 'react-icons/md'
 const IconWeather = () => {
     const { weatherCondition } = useContext(WeatherContext)
     return (
-        <div className=' flex flex-col text-[30px] items-center'>
+        <div className=' flex flex-col text-[32px] font-bold items-center'>
             {weatherCondition === "Smoke" && <span className='text-white text-[30px]'> <WiCloudy /> </span>}
-            {weatherCondition === "Clouds" && <span className='text-white text-[30px]'> <BsFillCloudSunFill /> </span>}
+            {weatherCondition === "Clouds" && <span className=' text-[30px] text-yellow-300'> <BsFillCloudSunFill /> </span>}
             {weatherCondition === "Rain" && <span className='text-white text-[30px]'> <BsFillCloudRainHeavyFill /> </span>}
             {weatherCondition === "Clear" && <span className='text-white text-[30px]'> <BsSun /> </span>}
             {weatherCondition === "Thunderstrom" && <span className='text-white text-[30px]'> <MdThunderstorm /> </span>}

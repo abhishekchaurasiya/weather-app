@@ -1,12 +1,12 @@
 import React from 'react'
-import sunClearBg from "../assets/clear.jpg";
 import sunbg from "../assets/sunbg.jpg"
 
 const Background = () => {
 
     return (
-        <div className='relative w-full h-full'>
-            <img src={sunbg} alt="" className='w-full h-[100vh] object-cover ' />
+        <div className='grid xs:grid-col-1 '>
+            <img src={sunbg} alt="" className='object-cover h-[100vh] w-full relative'/>
+            <div className='absolute w-full h-full bg-black opacity-40'>hel</div>
         </div>
     )
 }
