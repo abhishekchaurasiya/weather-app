@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { WeatherContext } from '../context/WeathetContext'
 import { WiCloudy, WiSnow } from "react-icons/wi"
-import { BsSun, BsFillCloudRainHeavyFill, BsFillCloudSunFill, BsCloudLightningRainFill, BsCloudHazeFill, BsClouds } from 'react-icons/bs'
+import { BsSun, BsFillCloudRainHeavyFill, BsFillCloudSunFill, BsCloudHazeFill, BsClouds } from 'react-icons/bs'
 import { MdThunderstorm } from 'react-icons/md'
 
 const IconWeather = () => {
