@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { WeatherContext } from '../context/WeathetContext'
-import { WiCloudy } from "react-icons/wi"
+import { WiCloudy, WiSnow } from "react-icons/wi"
 import { BsSun, BsFillCloudRainHeavyFill, BsFillCloudSunFill, BsCloudLightningRainFill, BsCloudHazeFill, BsClouds } from 'react-icons/bs'
 import { MdThunderstorm } from 'react-icons/md'
 
@@ -15,6 +15,7 @@ const IconWeather = () => {
             {weatherCondition === "Thunderstrom" && <span className='text-white text-[30px]'> <MdThunderstorm /> </span>}
             {weatherCondition === "Haze" && <span className='text-white text-[30px]'> <BsCloudHazeFill /> </span>}
             {weatherCondition === "Mist" && <span className='text-white text-[30px]'> <BsClouds /> </span>}
+            {weatherCondition === "Snow" && <span className='text-white text-[33px]'> <WiSnow /> </span>}
             {weatherCondition}
         </div>
     )
